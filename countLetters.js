@@ -1,7 +1,4 @@
 const assertEqual = function(actual, expected) {
-  // console.log("BLACK", actual);
-  // console.log("WHITE", expected);
-
   if (actual === expected) {
     console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
   } else {
@@ -9,16 +6,17 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const countLetters = function(word, wordToCount) {
+const countLetters = function(word) {
   const results = {};
   console.log("BLACK", results);
 
   for (const letter of word) {
-    if (wordToCount[letter]) {
-      // console.log("VIOLET", itemsToCount[item]);
-      // console.log("AQUA", itemsToCount);
-      // if (results[item]) {
+    console.log("WHITE", letter);
+    console.log("GRAY", word);
+    console.log("GRAY", word[letter]);
+    if (results[letter]) {
       results[letter] += 1;
+      console.log("GOLD", results[letter]);
     } else {
       results[letter] = 1;
     }
@@ -26,4 +24,4 @@ const countLetters = function(word, wordToCount) {
   return results;
 };
 
-console.log(countLetters("Yiqi", 2));
+console.log(countLetters("yiqi"));
