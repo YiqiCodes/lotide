@@ -1,5 +1,3 @@
-const assertArraysEquals = require("./assertArraysEquals");
-
 const middle = function(array) {
   let middle = [];
   if (array.length <= 2) {
@@ -15,14 +13,5 @@ const middle = function(array) {
   }
   return middle;
 };
-
-// assertEqual(middle([1]), []); // => []
-// assertEqual(middle([1, 2]), []); // => []
-
-// assertEqual(middle([1, 2, 3]), [2]); // => [2]
-// assertEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
-
-// assertEqual(middle([1, 2, 3, 4]), [2, 3]); // => [2, 3]
-// assertEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]); // => [3, 4]
 
 module.exports = middle;
