@@ -20,7 +20,7 @@ const assertEqual = function(actual, expected) {
 const without = function(original, push) {
   let withoutArray = [];
   for (i = 0; i < original.length; i++) {
-    if (push.includes(original[i]) === false) {
+    if (push.includes(originatl[i]) === false) {
       withoutArray.push(original[i]);
     }
   }
